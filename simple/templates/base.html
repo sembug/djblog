@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="{% static "css/reset.css" %}" />
+  <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div id="logo">
+        <img src="{% static "images/logo.png" %}" />
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Archive</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>&copy; 2015 <a href="http://www.teste.com">sembug</a></footer>
+
+  </div>
+  <!--container -->
+
+</body>
+
+</html>
